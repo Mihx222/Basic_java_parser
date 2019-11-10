@@ -11,9 +11,7 @@ public class Main {
     public static void main(String[] args) {
         try {
             // Read and parse the document
-            File inputFile = new File(
-                    "D:\\Univer\\Univer\\Anul 3\\Semestrul 1\\SBC\\lab\\Lab04 XML\\official_exchange_rates.xml"
-            );
+            File inputFile = new File("official_exchange_rates.xml");
             DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
             Document doc = dBuilder.parse(inputFile);
